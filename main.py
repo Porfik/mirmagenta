@@ -4,29 +4,29 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index')
+@app.route('/main')
 def index():
-    return render_template('index.html')
+    return render_template('main.html')
 
 
-@app.route('/one')
+@app.route('/data')
 def one():
-    return render_template('one.html')
+    return render_template('data.html')
 
 
-@app.route('/two')
+@app.route('/pictures')
 def two():
-    return render_template('two.html')
+    return render_template('pictures.html')
 
 
-@app.route('/three')
+@app.route('/goals')
 def three():
-    return render_template('three.html')
+    return render_template('goals.html')
 
 
-@app.route('/four')
+@app.route('/about-us')
 def contacts():
-    return render_template('four.html')
+    return render_template('about-us.html')
 
 
 if __name__ == '__main__':

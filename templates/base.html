@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="topic">
+        {% block topic %}{% endblock %}
+    </div>
+
+    <div class="header, shell">
+        <div class="header, inner">
+            <a href="/main">Главное</a>
+            <a href="/data">Факты</a>
+            <a href="/pictures">Картинки</a>
+            <a href="/goals">Цели</a>
+            <a href="/about-us">О нас</a>
+        </div>
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="futter, shell">
+        <div class="futter, inner">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</body>
+</html>
