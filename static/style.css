@@ -1,0 +1,47 @@
+body {
+    background-color: #AA39AA;
+    color: #FFC800;
+    font-family: Arial;
+}
+
+h1 {
+    background-color: #FF00FF;
+}
+
+.nav_bar {
+  overflow: hidden;
+  background-color: #FF00FF;
+}
+
+.nav_bar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.nav_bar a:hover:not(.active) {
+  background-color: #408076;
+}
+
+.nav_bar a.active {
+  background-color: #00FFD9;
+}
+
+.content {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 500px;
+  height: auto;
+  cursor: pointer;
+}
